@@ -31,7 +31,7 @@ public class LoginSteps {
 	@Given("User navigates to SignUp\\/Login page")
 	public void user_navigates_to_sign_up_login_page() {
     	BaseClass.getLogger().info("Click on Signup/Login.. ");
-    	hp= new HomePage(BaseClass.getDriver());
+    	
     	hp.linkOfSignupLogin();
 		
 		// Write code here that turns the phrase above into concrete actions

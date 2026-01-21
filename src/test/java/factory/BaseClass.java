@@ -30,7 +30,7 @@ public class BaseClass {
 			
 			//os
 			if (getProperties().getProperty("os").equalsIgnoreCase("windows")) {
-			    capabilities.setPlatform(Platform.WIN11);
+			    capabilities.setPlatform(Platform.WIN10);
 			} else if (getProperties().getProperty("os").equalsIgnoreCase("mac")) {
 			    capabilities.setPlatform(Platform.MAC);
 			} else {
