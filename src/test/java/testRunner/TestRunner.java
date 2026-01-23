@@ -8,8 +8,12 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 					//features= {".//Features/"},
-					features= {".//Features/Login.feature"},
+					//features= {".//Features/Login.feature"},
 					//features= {".//Features/LoginDDTExcel.feature"},
+					//features= {".//Features/Cart.feature"},
+					//features= {".//Features/CheckOut.feature"},
+					features= {".//Features/Payment.feature"},
+		 			//features= {".//Features/Registration.feature"},
 					//features= {".//Features/Login.feature",".//Features/Registration.feature"},
 					//features= {"@target/rerun.txt"},
 					glue="stepDefinitions",
