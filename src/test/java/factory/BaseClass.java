@@ -13,6 +13,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -44,7 +45,10 @@ public class BaseClass {
 			        capabilities.setBrowserName("chrome");
 			        break;
 			    case "edge":
-			        capabilities.setBrowserName("MicrosoftEdge");
+			        capabilities.setBrowserName("edge");
+			        break;
+			    case "firefox":
+			        capabilities.setBrowserName("firefox");
 			        break;
 			    default:
 			        System.out.println("No matching browser");
@@ -63,12 +67,14 @@ public class BaseClass {
 			    case "edge":
 			    	driver=new EdgeDriver();
 			        break;
+			    case "firefox":
+			    	driver= new FirefoxDriver();
 			    default:
 			        System.out.println("No matching browser");
 			        driver=null;
 				}
 			}
-		 driver.manage().deleteAllCookies(); 
+		 //driver.manage().deleteAllCookies(); 
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 		 

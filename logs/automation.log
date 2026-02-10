@@ -1,4 +1,7 @@
-16:39:47.257 [main] INFO  - Goto Homepage 
-16:39:47.417 [main] INFO  - Click on Signup/Login.. 
-16:39:49.800 [main] INFO  - Entering email and password.. 
-16:39:55.413 [main] INFO  - clicked on login button...
+15:13:13.266 [main] INFO  - Goto Homepage 
+15:13:13.532 [main] INFO  - Click on Signup/Login.. 
+15:13:16.115 [main] INFO  - Entering email and password.. 
+15:13:30.275 [main] INFO  - clicked on login button...
+15:13:35.352 [main] INFO  - Click on add to cart below desired product
+15:13:36.539 [main] INFO  - Click on cart button present on header of page
+15:13:47.757 [main] INFO  - Verify product is successfully added to cart

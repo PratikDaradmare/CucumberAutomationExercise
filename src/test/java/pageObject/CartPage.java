@@ -1,12 +1,10 @@
 package pageObject;
 
-import java.time.Duration;
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CartPage extends BasePage{
 	
@@ -32,17 +30,21 @@ public class CartPage extends BasePage{
 
 	public void clickAddToCart()
 	{
-		WebDriverWait mywait= new WebDriverWait(driver, Duration.ofSeconds(11));
-		mywait.until(ExpectedConditions.elementToBeClickable(addToCartButton));
+//		WebDriverWait mywait= new WebDriverWait(driver, Duration.ofSeconds(11));
+//		mywait.until(ExpectedConditions.elementToBeClickable(addToCartButton));
+		
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		WebElement addtocart=driver.findElement(By.xpath("//body[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]"));
+		js.executeScript("arguments[0].scrollIntoView()", addtocart);
 		
 		addToCartButton.click();
 	}
 	
 	public void viewCart()
 	{
-		WebDriverWait mywait= new WebDriverWait(driver, Duration.ofSeconds(20));
-		//mywait.until(ExpectedConditions.elementToBeClickable(headerCartButton));
-		mywait.until(ExpectedConditions.elementToBeClickable(viewCartFlash));
+//		WebDriverWait mywait= new WebDriverWait(driver, Duration.ofSeconds(20));
+//		//mywait.until(ExpectedConditions.elementToBeClickable(headerCartButton));
+//		mywait.until(ExpectedConditions.elementToBeClickable(viewCartFlash));
 		
 		viewCartFlash.click();
 		

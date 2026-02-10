@@ -10,11 +10,12 @@ import io.cucumber.junit.CucumberOptions;
 					//features= {".//Features/"},
 					//features= {".//Features/Login.feature"},
 					//features= {".//Features/LoginDDTExcel.feature"},
-					//features= {".//Features/Cart.feature"},
+					features= {".//Features/Cart.feature"},
 					//features= {".//Features/CheckOut.feature"},
-					features= {".//Features/Payment.feature"},
+					//features= {".//Features/Payment.feature"},
 		 			//features= {".//Features/Registration.feature"},
 					//features= {".//Features/Login.feature",".//Features/Registration.feature"},
+					//features= {".//Features/LoginGrid.feature"},
 					//features= {"@target/rerun.txt"},
 					glue="stepDefinitions",
 					plugin= {"pretty", "html:reports/myreport.html", 
@@ -32,5 +33,5 @@ import io.cucumber.junit.CucumberOptions;
 					//tags="@sanity or @regression" //Scenarios tagged with either @sanity or @regression
 		)
 public class TestRunner {
-
+	
 		}
